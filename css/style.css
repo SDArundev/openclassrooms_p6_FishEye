@@ -1,0 +1,114 @@
+@import url("photographer.css");
+
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+main {
+  margin-inline: 7rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+h1 {
+  color: #901c1c;
+  margin-right: 100px;
+}
+
+h2,
+h3,
+h4,
+span,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.logo {
+  height: 60px;
+  margin-left: 100px;
+}
+
+.photographer_section {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.photographer_card {
+  display: grid;
+  align-items: center;
+  place-content: center;
+  justify-content: center;
+  gap: 0.2rem;
+  width: 100%;
+}
+.photographer_card_link {
+  cursor: pointer;
+  object-fit: cover;
+  object-position: center;
+  text-align: center;
+}
+
+.photographer_card_name {
+  color: #d3573c;
+  font-size: 32px;
+  text-align: center;
+}
+
+.photographer_card_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  color: #525252;
+  font-size: 16px;
+}
+
+.photographer_card_location {
+  color: #d3573c;
+  font-size: 16px;
+}
+.photographer_card_tagline {
+  color: #525252;
+  font-size: 14px;
+  font-weight: 600;
+}
+.photographer_card_price {
+  color: #757575;
+  font-size: 16px;
+}
+
+.photographer_card_img {
+  border-radius: 100vw;
+  aspect-ratio: 1;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 768px) {
+  .photographer_section {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    align-items: center;
+    justify-content: center;
+  }
+}
